@@ -8,11 +8,17 @@ GPIO pins used to control multiplexer are selected with device tree configuratio
 
 ## How to use
 The selection of channels to convert is performed through sysfs.
+
 Selecting the channel N:
+
 `echo N > /sys/kernel/lradc/mux/select`
+
 Deselecting the channel N:
+
 `echo N > /sys/kernel/lradc/mux/deselect`
+
 Reading the data from the channel N:
+
 `echo N > /sys/kernel/lradc/channelN/value`
 
 
