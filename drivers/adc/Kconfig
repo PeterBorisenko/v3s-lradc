@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: GPL-2.0
+#
+# ADC configuration
+#
+menuconfig ADC_SYSFS
+	bool "ADC support"
+
+if ADC_SYSFS
+
+config SUN4I_LRADC
+	bool "Sun4i LRADC"
+	depends on ARCH_SUNXI
+	depends on !KEYBOARD_SUN4I_LRADC
+	help
+	  Say Y here if you want to use Sunxi LRADC as a general purpose ADC
+
+endif
