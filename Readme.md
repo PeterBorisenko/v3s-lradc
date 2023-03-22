@@ -32,4 +32,5 @@ adc_mux_pins: adc-mux-pins {
 
 ## Limitations
 * An internal logic of LRADC is triggered on levels higher than 2.0V. Hence normal operation is corrupting if any channel input exceed that level.
+* The reference voltage of the LRADC is 2.15V. Restricting the input by 2.0V we get 5.9 bits resolution instead of 6
 * The multiplexer supports only 3 address lines.
